@@ -49,14 +49,13 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 `~/.extra` can override settings, functions and aliases from my dotfiles. It’s probably better to [fork this repository](https://github.com/davidglidden/dotfiles/fork) instead, though.
 
 
-**Step 2:** `brew.sh` *(Install Homebrew formulae)*
+**Step 2:** `brew.sh` *(Install [Homebrew](http://brew.sh/) formulae)*
 
-Install [Homebrew](http://brew.sh/) formulae the next step.
 ```bash
 ./brew.sh
 ```
 
-**Step 3:** `osxsoftwarebase.sh` *(install all possible 3rd party apps from Homebrew)*
+**Step 3:** `osxsoftwarebase.sh` *(install all possible 3rd party OS X apps from Homebrew)*
 
 ```bash
 ./osxsoftwarebase.sh
