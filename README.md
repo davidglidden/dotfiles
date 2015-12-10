@@ -51,7 +51,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 **Step 2:** `brew.sh` *(Install Homebrew formulae)*
 
-Install [Homebrew](http://brew.sh/) formulae as a last step (Homebrew is installed right?)
+Install [Homebrew](http://brew.sh/) formulae the next step.
 ```bash
 ./brew.sh
 ```
