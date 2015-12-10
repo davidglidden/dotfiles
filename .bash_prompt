@@ -2,6 +2,14 @@
 # Screenshot: http://i.imgur.com/EkEtphC.png
 # Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles
 # iTerm → Profiles → Text → use 13pt Monaco with 1.1 vertical spacing.
+###
+# When your current working directory is a Git repository, the prompt will display the checked-out branch's name (and failing
+# that, the commit SHA that HEAD is pointing to). The state of the working tree is reflected in the following way:
+# [+] = Uncommitted changes in the index
+# [!] = Unstaged changes
+# [?] = Untracked files
+# [$] = Stashed files
+###
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
 	export TERM='gnome-256color';
