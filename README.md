@@ -1,13 +1,14 @@
 # davidglidden’s dotfiles
-***
+
 ## N.B.
 This is a modified fork of [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles) 
-There are many great things in these dotfiles, but everyone is different (and I can be rather lazy), so I’ve taken what works, and eliminated those elements which I do not use. Please look at his work directly to see what you’re getting in to.
+There are many great things in his dotfiles, but everyone is different (and I can be rather lazy), so I’ve taken what works, and eliminated those elements which I do not use. Please look at his work directly to see what you’re getting in to.
+Many thanks to [Mathias](https://github.com/mathiasbynens/), and to many others besides, for the subtlety and power of the underlying process.
 
 ## Installation:
 ### Using Git and the bootstrap script
 
-You can clone the repository wherever you want. (I keep it in `~/Projects/GitRepos/GitHub/dotfiles`, with `~/dotfiles` as a symlink.)
+Clone the repository wherever you want. (I keep it in `~/Projects/GitRepos/GitHub/dotfiles`, with `~/dotfiles` as a symlink.)
 
 **Step 1.** `Bootstrap.sh` *(Prepare the way)*
 
