@@ -1,7 +1,8 @@
-#!/usr/bin/env bash
-
-# Install command-line tools using Homebrew.
-
+# !/usr/bin/env bash
+###
+# 2. Install Homebrew and Terminal goodies.
+###
+#
 # Ask for the administrator password upfront.
 sudo -v
 

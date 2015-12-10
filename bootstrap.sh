@@ -1,5 +1,8 @@
-#!/usr/bin/env bash
-
+# !/usr/bin/env bash
+###
+# 1. Mastermind the operation
+###
+# 
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;

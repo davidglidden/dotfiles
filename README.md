@@ -4,8 +4,12 @@
 This is a modified fork of [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles) 
 There are many great things in these dotfiles, but everyone is different (and I can be rather lazy), so I’ve taken what works, and eliminated those elements which I do not use. Please look at his work directly to see what you’re getting in to.
 
+## Installation:
 ### Using Git and the bootstrap script
+
 You can clone the repository wherever you want. (I keep it in `~/Projects/GitRepos/GitHub/dotfiles`, with `~/dotfiles` as a symlink.)
+
+**Step 1.** `Bootstrap.sh` *(Prepare the way)*
 
 ```bash
 git clone https://github.com/davidglidden/dotfiles.git && cd dotfiles && source bootstrap.sh
@@ -44,17 +48,23 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 `~/.extra` can override settings, functions and aliases from my dotfiles. It’s probably better to [fork this repository](https://github.com/davidglidden/dotfiles/fork) instead, though.
 
-Sensible OS X defaults
 
-Save time: sensible OS X defaults:
-
-```bash
-./.osx
-```
-
-Install Homebrew formulae
+**Step 2:** `brew.sh` *(Install Homebrew formulae)*
 
 Install [Homebrew](http://brew.sh/) formulae as a last step (Homebrew is installed right?)
 ```bash
 ./brew.sh
+```
+
+**Step 3:** `osxsoftwarebase.sh` *(install all possible 3rd party apps from Homebrew)*
+
+```bash
+./osxsoftwarebase.sh
+```
+
+**Step 4:** `.osx` *(Save time: Sensible OS X defaults)*
+Sensible OS X defaults
+
+```bash
+./.osx
 ```
