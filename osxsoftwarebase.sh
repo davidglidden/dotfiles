@@ -36,11 +36,12 @@ brew cask install skype
 brew cask install slack
 brew cask install sonic-visualiser
 brew cask install spectacle
+brew cask install sublime-text
 brew cask install superduper
 brew cask install synology-assistant
 brew cask install textbar
 brew cask install textexpander
-brew cask install textmate
+# brew cask install textmate
 brew cask install torbrowser
 brew cask install tower
 brew cask install transmission
