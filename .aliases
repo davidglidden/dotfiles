@@ -15,14 +15,11 @@ alias goroots="cd ~/Projects/Roots/"
 alias gohugo="cd ~/Projects/Hugo/"
 alias goteam="cd ~/Projects/GitRepos/BitBucket/docs"
 alias f='open -a "Finder" ./' 			# Open current folder in Finder
-alias tm="open -a /Applications/TextMate.app"
 alias maintain="sudo periodic daily weekly monthly"
-alias c='clear'                             # c:            Clear terminal display
 alias screentiff="defaults write com.apple.screencapture type tiff;killall SystemUIServer"
 alias screenjpg="defaults write com.apple.screencapture type jpg;killall SystemUIServer"
 alias screengif="defaults write com.apple.screencapture type gif;killall SystemUIServer"
 alias screenpng="defaults write com.apple.screencapture type png;killall SystemUIServer"
-alias prof="tm ~/.bash_profile"
 alias reprof=". ~/.bash_profile"
 
 # Generate a random password
