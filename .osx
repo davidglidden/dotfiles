@@ -752,18 +752,25 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 # defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2 -boolean true
 
 ###############################################################################
-## make textmate the default for a lot of stuff                               #
+# If using Sublime Text, install base user settings                           #
 ###############################################################################
-if [ -z "`defaults read com.apple.LaunchServices | grep textmate`" ]; then
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.macromates.textmate;}'
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.text;LSHandlerRoleAll=com.macromates.textmate;}'
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.content;LSHandlerRoleAll=com.macromates.textmate;}'
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.data;LSHandlerRoleAll=com.macromates.textmate;}'
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.source-code;LSHandlerRoleAll=com.macromates.textmate;}'
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.script;LSHandlerRoleAll=com.macromates.textmate;}'
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.shell-script;LSHandlerRoleAll=com.macromates.textmate;}'
-  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.executable;LSHandlerRoleAll=com.macromates.textmate;}'
-fi
+
+# Install Sublime Text settings
+cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+###############################################################################
+## If using TextMate, make it the default for a lot of stuff                  #
+###############################################################################
+# if [ -z "`defaults read com.apple.LaunchServices | grep textmate`" ]; then
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.macromates.textmate;}'
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.text;LSHandlerRoleAll=com.macromates.textmate;}'
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.content;LSHandlerRoleAll=com.macromates.textmate;}'
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.data;LSHandlerRoleAll=com.macromates.textmate;}'
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.source-code;LSHandlerRoleAll=com.macromates.textmate;}'
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.script;LSHandlerRoleAll=com.macromates.textmate;}'
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.shell-script;LSHandlerRoleAll=com.macromates.textmate;}'
+#  defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.executable;LSHandlerRoleAll=com.macromates.textmate;}'
+#fi
 
 
 ###############################################################################

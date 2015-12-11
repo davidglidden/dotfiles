@@ -1,5 +1,8 @@
+# Make SublimeText the default editor.
+export EDITOR='/usr/local/bin/sublime';
+
 # Make TextMate the default editor.
-export EDITOR='/usr/local/bin/mate -w';
+# export EDITOR='/usr/local/bin/mate -w';
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
