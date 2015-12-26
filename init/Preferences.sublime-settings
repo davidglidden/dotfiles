@@ -1,6 +1,5 @@
 {
 	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
-	"theme": "Cobalt2.sublime.theme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": false,
@@ -41,8 +40,15 @@
 	"show_encoding": true,
 	"show_line_endings": true,
 	"tab_size": 2,
+	"line_padding_bottom": 1,
+	"line_padding_top":1,
 	"translate_tabs_to_spaces": false,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true,
-	"spell_check": true
+	"spell_check": true,
+	"draw_minimap_border": true,
+	"caret_style": "smooth",
+	"caret_extra_top": 2,
+  "caret_extra_bottom": 2,
+  "caret_extra_width": 1
 }
